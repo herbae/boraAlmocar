@@ -2,7 +2,31 @@ angular.module('starter.controllers', [])
 
 .controller('AlmocoCtrl', function($scope) {
   var self = this;
+
   self.existeSala = false;
+  self.contatos = [];
+    self.restaurantes = [
+      {
+        nome: "Govinda"
+      },
+      {
+        nome: "Salsalito"
+      },
+      {
+        nome: "Reino Vegetal"
+      },
+      {
+        nome: "Conexão Filé e Folhas"
+      },
+      {
+        nome: "Franz Café"
+      }
+    ];
+
+  self.criarSala = function() {
+    self.existeSala = true;
+  }
+
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {
