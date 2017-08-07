@@ -1,10 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('AlmocoCtrl', function($scope) {
+.controller('AlmocoCtrl', function($scope, Chats) {
   var self = this;
 
   self.existeSala = false;
-  self.contatos = [];
+  self.contatos = Chats.all();
     self.restaurantes = [
       {
         nome: "Govinda"
