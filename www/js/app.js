@@ -45,7 +45,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-almoco': {
         templateUrl: 'templates/tab-almoco.html',
-        controller: 'AlmocoCtrl'
+        controller: 'AlmocoCtrl',
+        controllerAs: 'ctrl'
       }
     }
   })
