@@ -4,6 +4,7 @@ angular.module('starter.controllers', [])
   var self = this;
 self.nota = 10;
   self.existeSala = false;
+  self.resultadoVotacao = null;
   self.contatos = Chats.all();
   self.options = {
         showSelectionBar: true,
@@ -31,6 +32,9 @@ self.nota = 10;
     self.existeSala = true;
   }
 
+  self.votar = function() {
+
+  }
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {
