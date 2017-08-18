@@ -1,0 +1,18 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <button class="button button-block button-positive" ng-if="!ctrl.existeSala" ng-click="ctrl.criarSala()">
+      Nova Sala
+    </button>
+    <div ng-if="ctrl.existeSala">
+      <div class="card">
+        <div class="item item-text-wrap" ng-repeat="r in ctrl.restaurantes">
+          {{r.nome}}
+        </div>
+      </div>
+      <hr/>
+      <h3>Há {{ctrl.contatos.length}} participantes na sala. </h3>
+    </div>
+
+
+  </ion-content>
+</ion-view>
