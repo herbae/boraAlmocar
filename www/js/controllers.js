@@ -2,24 +2,28 @@ angular.module('starter.controllers', [])
 
 .controller('AlmocoCtrl', function($scope, Chats) {
   var self = this;
-
+self.nota = 10;
   self.existeSala = false;
   self.contatos = Chats.all();
-    self.restaurantes = [
+  self.options = {
+        showSelectionBar: true,
+        ceil: 5
+    }
+  self.restaurantes = [
       {
-        nome: "Govinda"
+        nome: "Govinda", nota: 0
       },
       {
-        nome: "Salsalito"
+        nome: "Salsalito", nota: 0
       },
       {
-        nome: "Reino Vegetal"
+        nome: "Reino Vegetal", nota: 0
       },
       {
-        nome: "Conexão Filé e Folhas"
+        nome: "Conexão Filé e Folhas", nota: 0
       },
       {
-        nome: "Franz Café"
+        nome: "Franz Café", nota: 0
       }
     ];
 
